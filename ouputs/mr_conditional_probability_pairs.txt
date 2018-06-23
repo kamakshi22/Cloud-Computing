@@ -1,0 +1,177 @@
+
+Kamakshi@ThinkpadX220 MINGW64 /d/UCL/Cloud Computing/Cloud Computing/Bigram
+$ python mr_conditional_prob_pairs.py datacondition/* -r emr -c etc/.mrjob.conf
+Creating temp directory c:\users\kamakshi\appdata\local\temp\mr_conditional_prob                                                                                                                _pairs.Kamakshi.20161218.203646.378000
+Copying local files to s3://mapreduce22/tmp/mr_conditional_prob_pairs.Kamakshi.2                                                                                                                0161218.203646.378000/files/...
+Created new cluster j-3023NWHLQNCFQ
+Waiting for step 1 of 2 (s-12DKXWI819I5X) to complete...
+  PENDING (cluster is STARTING)
+  PENDING (cluster is STARTING)
+  PENDING (cluster is STARTING)
+  PENDING (cluster is STARTING)
+  PENDING (cluster is STARTING)
+  PENDING (cluster is STARTING)
+  PENDING (cluster is STARTING: Configuring cluster software)
+  PENDING (cluster is BOOTSTRAPPING: Running bootstrap actions)
+  PENDING (cluster is BOOTSTRAPPING: Running bootstrap actions)
+  PENDING (cluster is BOOTSTRAPPING: Running bootstrap actions)
+  RUNNING for 6.0s
+  RUNNING for 36.4s
+  RUNNING for 66.6s
+  RUNNING for 97.5s
+  RUNNING for 128.4s
+  RUNNING for 158.7s
+  RUNNING for 189.4s
+  RUNNING for 220.1s
+  COMPLETED
+Attempting to fetch counters from logs...
+Waiting 10 minutes for logs to transfer to S3... (ctrl-c to skip)
+
+To fetch logs immediately next time, set up SSH. See:
+https://pythonhosted.org/mrjob/guides/emr-quickstart.html#configuring-ssh-creden                                                                                                                tials
+
+Looking for step log in s3://mapreduce22/logs/j-3023NWHLQNCFQ/steps/s-12DKXWI819                                                                                                                I5X...
+  Parsing step log: s3://mapreduce22/logs/j-3023NWHLQNCFQ/steps/s-12DKXWI819I5X/                                                                                                                syslog.gz
+Counters: 55
+        File Input Format Counters
+                Bytes Read=4574694
+        File Output Format Counters
+                Bytes Written=6637867
+        File System Counters
+                FILE: Number of bytes read=2748428
+                FILE: Number of bytes written=7682384
+                FILE: Number of large read operations=0
+                FILE: Number of read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=1170
+                HDFS: Number of bytes written=6637867
+                HDFS: Number of large read operations=0
+                HDFS: Number of read operations=25
+                HDFS: Number of write operations=6
+                S3: Number of bytes read=4574694
+                S3: Number of bytes written=0
+                S3: Number of large read operations=0
+                S3: Number of read operations=0
+                S3: Number of write operations=0
+        Job Counters
+                Data-local map tasks=8
+                Killed reduce tasks=1
+                Launched map tasks=8
+                Launched reduce tasks=4
+                Total megabyte-seconds taken by all map tasks=275837184
+                Total megabyte-seconds taken by all reduce tasks=113505280
+                Total time spent by all map tasks (ms)=359163
+                Total time spent by all maps in occupied slots (ms)=1077489
+                Total time spent by all reduce tasks (ms)=110845
+                Total time spent by all reduces in occupied slots (ms)=443380
+                Total vcore-seconds taken by all map tasks=359163
+                Total vcore-seconds taken by all reduce tasks=110845
+        Map-Reduce Framework
+                CPU time spent (ms)=143500
+                Combine input records=1504537
+                Combine output records=395013
+                Failed Shuffles=0
+                GC time elapsed (ms)=7049
+                Input split bytes=1170
+                Map input records=82534
+                Map output bytes=23263202
+                Map output materialized bytes=3781839
+                Map output records=1504537
+                Merged Map outputs=24
+                Physical memory (bytes) snapshot=3457191936
+                Reduce input groups=224492
+                Reduce input records=395013
+                Reduce output records=224492
+                Reduce shuffle bytes=3781839
+                Shuffled Maps =24
+                Spilled Records=790026
+                Total committed heap usage (bytes)=2333048832
+                Virtual memory (bytes) snapshot=14245867520
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+Waiting for step 2 of 2 (s-3D4TJF5LBOQCM) to complete...
+  COMPLETED
+Attempting to fetch counters from logs...
+Looking for step log in s3://mapreduce22/logs/j-3023NWHLQNCFQ/steps/s-3D4TJF5LBO                                                                                                                QCM...
+  Parsing step log: s3://mapreduce22/logs/j-3023NWHLQNCFQ/steps/s-3D4TJF5LBOQCM/                                                                                                                syslog.gz
+Counters: 54
+        File Input Format Counters
+                Bytes Read=6771277
+        File Output Format Counters
+                Bytes Written=299
+        File System Counters
+                FILE: Number of bytes read=2337087
+                FILE: Number of bytes written=5606685
+                FILE: Number of large read operations=0
+                FILE: Number of read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=6772303
+                HDFS: Number of bytes written=0
+                HDFS: Number of large read operations=0
+                HDFS: Number of read operations=12
+                HDFS: Number of write operations=0
+                S3: Number of bytes read=0
+                S3: Number of bytes written=299
+                S3: Number of large read operations=0
+                S3: Number of read operations=0
+                S3: Number of write operations=0
+        Job Counters
+                Data-local map tasks=6
+                Launched map tasks=6
+                Launched reduce tasks=3
+                Total megabyte-seconds taken by all map tasks=104421888
+                Total megabyte-seconds taken by all reduce tasks=79689728
+                Total time spent by all map tasks (ms)=135966
+                Total time spent by all maps in occupied slots (ms)=407898
+                Total time spent by all reduce tasks (ms)=77822
+                Total time spent by all reduces in occupied slots (ms)=311288
+                Total vcore-seconds taken by all map tasks=135966
+                Total vcore-seconds taken by all reduce tasks=77822
+        Map-Reduce Framework
+                CPU time spent (ms)=23600
+                Combine input records=0
+                Combine output records=0
+                Failed Shuffles=0
+                GC time elapsed (ms)=4214
+                Input split bytes=1026
+                Map input records=224492
+                Map output bytes=6637867
+                Map output materialized bytes=2337165
+                Map output records=224492
+                Merged Map outputs=18
+                Physical memory (bytes) snapshot=2736091136
+                Reduce input groups=1
+                Reduce input records=224492
+                Reduce output records=10
+                Reduce shuffle bytes=2337165
+                Shuffled Maps =18
+                Spilled Records=448984
+                Total committed heap usage (bytes)=1794465792
+                Virtual memory (bytes) snapshot=11816611840
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+Streaming final output from s3://mapreduce22/tmp/mr_conditional_prob_pairs.Kamak                                                                                                                shi.20161218.203646.378000/output/...
+"for,the"       0.13680100404406637
+"for,her"       0.07195649142379026
+"for,a" 0.06902802956351974
+"for,his"       0.029005717473155765
+"for,it"        0.028029563519732254
+"for,him"       0.022730442058290334
+"for,me"        0.018686375679821503
+"for,i" 0.018686375679821503
+"for,you"       0.01784967229117278
+"for,my"        0.017012968902524055
+Removing s3 temp directory s3://mapreduce22/tmp/mr_conditional_prob_pairs.Kamaks                                                                                                                hi.20161218.203646.378000/...
+Removing temp directory c:\users\kamakshi\appdata\local\temp\mr_conditional_prob                                                                                                                _pairs.Kamakshi.20161218.203646.378000...
+Removing log files in s3://mapreduce22/logs/j-3023NWHLQNCFQ/...
+Terminating cluster: j-3023NWHLQNCFQ

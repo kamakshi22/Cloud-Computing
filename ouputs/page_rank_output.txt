@@ -1,0 +1,1245 @@
+Kamakshi@ThinkpadX220 MINGW64 /d/UCL/Cloud Computing/Cloud Computing/pagerank
+$  python page_rank.py data/* -r emr -c etc/.mrjob.conf
+Creating temp directory c:\users\kamakshi\appdata\local\temp\page_rank.Kamakshi.                                                                                                                20161218.220449.916000
+Copying local files to s3://mapreduce22/tmp/page_rank.Kamakshi.20161218.220449.9                                                                                                                16000/files/...
+Created new cluster j-3JANELSUDKQXB
+Waiting for step 1 of 19 (s-21TET8GH7LITH) to complete...
+  PENDING (cluster is STARTING)
+  PENDING (cluster is STARTING)
+  PENDING (cluster is STARTING)
+  PENDING (cluster is STARTING)
+  PENDING (cluster is STARTING)
+  PENDING (cluster is STARTING)
+  PENDING (cluster is STARTING)
+  PENDING (cluster is STARTING: Configuring cluster software)
+  PENDING (cluster is STARTING: Configuring cluster software)
+  PENDING (cluster is BOOTSTRAPPING: Running bootstrap actions)
+  PENDING (cluster is BOOTSTRAPPING: Running bootstrap actions)
+  PENDING (cluster is BOOTSTRAPPING: Running bootstrap actions)
+  RUNNING for 15.2s
+  RUNNING for 46.1s
+  RUNNING for 76.9s
+  RUNNING for 107.7s
+  RUNNING for 137.8s
+  COMPLETED
+Attempting to fetch counters from logs...
+Waiting 10 minutes for logs to transfer to S3... (ctrl-c to skip)
+
+To fetch logs immediately next time, set up SSH. See:
+https://pythonhosted.org/mrjob/guides/emr-quickstart.html#configuring-ssh-creden                                                                                                                tials
+
+Looking for step log in s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-21TET8GH7L                                                                                                                ITH...
+  Parsing step log: s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-21TET8GH7LITH/                                                                                                                syslog.gz
+Counters: 54
+        File Input Format Counters
+                Bytes Read=5685296
+        File Output Format Counters
+                Bytes Written=7189455
+        File System Counters
+                FILE: Number of bytes read=3522180
+                FILE: Number of bytes written=7769250
+                FILE: Number of large read operations=0
+                FILE: Number of read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=552
+                HDFS: Number of bytes written=7189455
+                HDFS: Number of large read operations=0
+                HDFS: Number of read operations=17
+                HDFS: Number of write operations=6
+                S3: Number of bytes read=5685296
+                S3: Number of bytes written=0
+                S3: Number of large read operations=0
+                S3: Number of read operations=0
+                S3: Number of write operations=0
+        Job Counters
+                Data-local map tasks=4
+                Launched map tasks=4
+                Launched reduce tasks=3
+                Total megabyte-seconds taken by all map tasks=109944576
+                Total megabyte-seconds taken by all reduce tasks=67015680
+                Total time spent by all map tasks (ms)=143157
+                Total time spent by all maps in occupied slots (ms)=429471
+                Total time spent by all reduce tasks (ms)=65445
+                Total time spent by all reduces in occupied slots (ms)=261780
+                Total vcore-seconds taken by all map tasks=143157
+                Total vcore-seconds taken by all reduce tasks=65445
+        Map-Reduce Framework
+                CPU time spent (ms)=48310
+                Combine input records=0
+                Combine output records=0
+                Failed Shuffles=0
+                GC time elapsed (ms)=3323
+                Input split bytes=552
+                Map input records=508841
+                Map output bytes=9224801
+                Map output materialized bytes=3522179
+                Map output records=508838
+                Merged Map outputs=12
+                Physical memory (bytes) snapshot=1985265664
+                Reduce input groups=1
+                Reduce input records=508838
+                Reduce output records=1
+                Reduce shuffle bytes=3522179
+                Shuffled Maps =12
+                Spilled Records=1017676
+                Total committed heap usage (bytes)=1268744192
+                Virtual memory (bytes) snapshot=9374572544
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+Waiting for step 2 of 19 (s-2M9R0DWUKWRI4) to complete...
+  COMPLETED
+Attempting to fetch counters from logs...
+Waiting 10 minutes for logs to transfer to S3... (ctrl-c to skip)
+
+To fetch logs immediately next time, set up SSH. See:
+https://pythonhosted.org/mrjob/guides/emr-quickstart.html#configuring-ssh-creden                                                                                                                tials
+
+Looking for step log in s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-2M9R0DWUKW                                                                                                                RI4...
+  Parsing step log: s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-2M9R0DWUKWRI4/                                                                                                                syslog.gz
+Counters: 52
+        File Input Format Counters
+                Bytes Read=12656108
+        File Output Format Counters
+                Bytes Written=4125109
+        File System Counters
+                FILE: Number of bytes read=3862793
+                FILE: Number of bytes written=8657797
+                FILE: Number of large read operations=0
+                FILE: Number of read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=12657050
+                HDFS: Number of bytes written=4125109
+                HDFS: Number of large read operations=0
+                HDFS: Number of read operations=27
+                HDFS: Number of write operations=6
+        Job Counters
+                Data-local map tasks=2
+                Killed reduce tasks=1
+                Launched map tasks=6
+                Launched reduce tasks=4
+                Other local map tasks=2
+                Rack-local map tasks=2
+                Total megabyte-seconds taken by all map tasks=108235008
+                Total megabyte-seconds taken by all reduce tasks=109285376
+                Total time spent by all map tasks (ms)=140931
+                Total time spent by all maps in occupied slots (ms)=422793
+                Total time spent by all reduce tasks (ms)=106724
+                Total time spent by all reduces in occupied slots (ms)=426896
+                Total vcore-seconds taken by all map tasks=140931
+                Total vcore-seconds taken by all reduce tasks=106724
+        Map-Reduce Framework
+                CPU time spent (ms)=45420
+                Combine input records=0
+                Combine output records=0
+                Failed Shuffles=0
+                GC time elapsed (ms)=2613
+                Input split bytes=942
+                Map input records=1
+                Map output bytes=10751281
+                Map output materialized bytes=3863021
+                Map output records=508837
+                Merged Map outputs=18
+                Physical memory (bytes) snapshot=2577248256
+                Reduce input groups=60341
+                Reduce input records=508837
+                Reduce output records=60341
+                Reduce shuffle bytes=3863021
+                Shuffled Maps =18
+                Spilled Records=1017674
+                Total committed heap usage (bytes)=1794465792
+                Virtual memory (bytes) snapshot=11787935744
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+Waiting for step 3 of 19 (s-IR6STSPC64V0) to complete...
+  COMPLETED
+Attempting to fetch counters from logs...
+Waiting 10 minutes for logs to transfer to S3... (ctrl-c to skip)
+
+To fetch logs immediately next time, set up SSH. See:
+https://pythonhosted.org/mrjob/guides/emr-quickstart.html#configuring-ssh-creden                                                                                                                tials
+
+Looking for step log in s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-IR6STSPC64                                                                                                                V0...
+  Parsing step log: s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-IR6STSPC64V0/s                                                                                                                yslog.gz
+Counters: 51
+        File Input Format Counters
+                Bytes Read=4177006
+        File Output Format Counters
+                Bytes Written=4146830
+        File System Counters
+                FILE: Number of bytes read=5820791
+                FILE: Number of bytes written=12576276
+                FILE: Number of large read operations=0
+                FILE: Number of read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=4177948
+                HDFS: Number of bytes written=4146830
+                HDFS: Number of large read operations=0
+                HDFS: Number of read operations=27
+                HDFS: Number of write operations=6
+        Job Counters
+                Data-local map tasks=5
+                Killed reduce tasks=1
+                Launched map tasks=6
+                Launched reduce tasks=4
+                Rack-local map tasks=1
+                Total megabyte-seconds taken by all map tasks=150286080
+                Total megabyte-seconds taken by all reduce tasks=124420096
+                Total time spent by all map tasks (ms)=195685
+                Total time spent by all maps in occupied slots (ms)=587055
+                Total time spent by all reduce tasks (ms)=121504
+                Total time spent by all reduces in occupied slots (ms)=486016
+                Total vcore-seconds taken by all map tasks=195685
+                Total vcore-seconds taken by all reduce tasks=121504
+        Map-Reduce Framework
+                CPU time spent (ms)=77980
+                Combine input records=569178
+                Combine output records=474324
+                Failed Shuffles=0
+                GC time elapsed (ms)=2567
+                Input split bytes=942
+                Map input records=60341
+                Map output bytes=23688552
+                Map output materialized bytes=5820307
+                Map output records=569178
+                Merged Map outputs=18
+                Physical memory (bytes) snapshot=2577399808
+                Reduce input groups=474269
+                Reduce input records=474324
+                Reduce output records=60899
+                Reduce shuffle bytes=5820307
+                Shuffled Maps =18
+                Spilled Records=948648
+                Total committed heap usage (bytes)=1794465792
+                Virtual memory (bytes) snapshot=11791593472
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+Waiting for step 4 of 19 (s-2Y3FZWESGM9FN) to complete...
+  COMPLETED
+Attempting to fetch counters from logs...
+Waiting 10 minutes for logs to transfer to S3... (ctrl-c to skip)
+
+To fetch logs immediately next time, set up SSH. See:
+https://pythonhosted.org/mrjob/guides/emr-quickstart.html#configuring-ssh-creden                                                                                                                tials
+
+Looking for step log in s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-2Y3FZWESGM                                                                                                                9FN...
+  Parsing step log: s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-2Y3FZWESGM9FN/                                                                                                                syslog.gz
+Counters: 50
+        File Input Format Counters
+                Bytes Read=4182437
+        File Output Format Counters
+                Bytes Written=4959639
+        File System Counters
+                FILE: Number of bytes read=2582173
+                FILE: Number of bytes written=6092567
+                FILE: Number of large read operations=0
+                FILE: Number of read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=4183379
+                HDFS: Number of bytes written=4959639
+                HDFS: Number of large read operations=0
+                HDFS: Number of read operations=27
+                HDFS: Number of write operations=6
+        Job Counters
+                Data-local map tasks=6
+                Killed reduce tasks=1
+                Launched map tasks=6
+                Launched reduce tasks=4
+                Total megabyte-seconds taken by all map tasks=93985536
+                Total megabyte-seconds taken by all reduce tasks=88678400
+                Total time spent by all map tasks (ms)=122377
+                Total time spent by all maps in occupied slots (ms)=367131
+                Total time spent by all reduce tasks (ms)=86600
+                Total time spent by all reduces in occupied slots (ms)=346400
+                Total vcore-seconds taken by all map tasks=122377
+                Total vcore-seconds taken by all reduce tasks=86600
+        Map-Reduce Framework
+                CPU time spent (ms)=28960
+                Combine input records=0
+                Combine output records=0
+                Failed Shuffles=0
+                GC time elapsed (ms)=2633
+                Input split bytes=942
+                Map input records=60899
+                Map output bytes=4154625
+                Map output materialized bytes=2578798
+                Map output records=60899
+                Merged Map outputs=18
+                Physical memory (bytes) snapshot=2568929280
+                Reduce input groups=60363
+                Reduce input records=60899
+                Reduce output records=82017
+                Reduce shuffle bytes=2578798
+                Shuffled Maps =18
+                Spilled Records=121798
+                Total committed heap usage (bytes)=1794465792
+                Virtual memory (bytes) snapshot=11791724544
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+Waiting for step 5 of 19 (s-1EAWR761K6HHO) to complete...
+  COMPLETED
+Attempting to fetch counters from logs...
+Looking for step log in s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-1EAWR761K6                                                                                                                HHO...
+  Parsing step log: s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-1EAWR761K6HHO/                                                                                                                syslog.gz
+Counters: 49
+        File Input Format Counters
+                Bytes Read=4975464
+        File Output Format Counters
+                Bytes Written=14676833
+        File System Counters
+                FILE: Number of bytes read=2991616
+                FILE: Number of bytes written=6762976
+                FILE: Number of large read operations=0
+                FILE: Number of read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=4976406
+                HDFS: Number of bytes written=14676833
+                HDFS: Number of large read operations=0
+                HDFS: Number of read operations=27
+                HDFS: Number of write operations=6
+        Job Counters
+                Data-local map tasks=6
+                Launched map tasks=6
+                Launched reduce tasks=3
+                Total megabyte-seconds taken by all map tasks=72019200
+                Total megabyte-seconds taken by all reduce tasks=91311104
+                Total time spent by all map tasks (ms)=93775
+                Total time spent by all maps in occupied slots (ms)=281325
+                Total time spent by all reduce tasks (ms)=89171
+                Total time spent by all reduces in occupied slots (ms)=356684
+                Total vcore-seconds taken by all map tasks=93775
+                Total vcore-seconds taken by all reduce tasks=89171
+        Map-Reduce Framework
+                CPU time spent (ms)=36870
+                Combine input records=0
+                Combine output records=0
+                Failed Shuffles=0
+                GC time elapsed (ms)=2845
+                Input split bytes=942
+                Map input records=82017
+                Map output bytes=4967434
+                Map output materialized bytes=2839764
+                Map output records=82017
+                Merged Map outputs=18
+                Physical memory (bytes) snapshot=2589491200
+                Reduce input groups=60799
+                Reduce input records=82017
+                Reduce output records=335951
+                Reduce shuffle bytes=2839764
+                Shuffled Maps =18
+                Spilled Records=164034
+                Total committed heap usage (bytes)=1794465792
+                Virtual memory (bytes) snapshot=11790131200
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+Waiting for step 6 of 19 (s-2F459469ORND) to complete...
+  COMPLETED
+Attempting to fetch counters from logs...
+Looking for step log in s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-2F459469OR                                                                                                                ND...
+  Parsing step log: s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-2F459469ORND/s                                                                                                                yslog.gz
+Counters: 49
+        File Input Format Counters
+                Bytes Read=14679257
+        File Output Format Counters
+                Bytes Written=20967874
+        File System Counters
+                FILE: Number of bytes read=8004568
+                FILE: Number of bytes written=15981296
+                FILE: Number of large read operations=0
+                FILE: Number of read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=14680199
+                HDFS: Number of bytes written=20967874
+                HDFS: Number of large read operations=0
+                HDFS: Number of read operations=27
+                HDFS: Number of write operations=6
+        Job Counters
+                Data-local map tasks=6
+                Launched map tasks=6
+                Launched reduce tasks=3
+                Total megabyte-seconds taken by all map tasks=83187456
+                Total megabyte-seconds taken by all reduce tasks=123924480
+                Total time spent by all map tasks (ms)=108317
+                Total time spent by all maps in occupied slots (ms)=324951
+                Total time spent by all reduce tasks (ms)=121020
+                Total time spent by all reduces in occupied slots (ms)=484080
+                Total vcore-seconds taken by all map tasks=108317
+                Total vcore-seconds taken by all reduce tasks=121020
+        Map-Reduce Framework
+                CPU time spent (ms)=51970
+                Combine input records=0
+                Combine output records=0
+                Failed Shuffles=0
+                GC time elapsed (ms)=2609
+                Input split bytes=942
+                Map input records=335951
+                Map output bytes=14684628
+                Map output materialized bytes=7045141
+                Map output records=335951
+                Merged Map outputs=18
+                Physical memory (bytes) snapshot=2572197888
+                Reduce input groups=67302
+                Reduce input records=335951
+                Reduce output records=500191
+                Reduce shuffle bytes=7045141
+                Shuffled Maps =18
+                Spilled Records=671902
+                Total committed heap usage (bytes)=1794465792
+                Virtual memory (bytes) snapshot=11790913536
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+Waiting for step 7 of 19 (s-2A5YL8D51IY0O) to complete...
+  COMPLETED
+Attempting to fetch counters from logs...
+Looking for step log in s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-2A5YL8D51I                                                                                                                Y0O...
+  Parsing step log: s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-2A5YL8D51IY0O/                                                                                                                syslog.gz
+Counters: 50
+        File Input Format Counters
+                Bytes Read=20970610
+        File Output Format Counters
+                Bytes Written=21912898
+        File System Counters
+                FILE: Number of bytes read=11437324
+                FILE: Number of bytes written=22928177
+                FILE: Number of large read operations=0
+                FILE: Number of read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=20971552
+                HDFS: Number of bytes written=21912898
+                HDFS: Number of large read operations=0
+                HDFS: Number of read operations=27
+                HDFS: Number of write operations=6
+        Job Counters
+                Data-local map tasks=6
+                Killed reduce tasks=1
+                Launched map tasks=6
+                Launched reduce tasks=4
+                Total megabyte-seconds taken by all map tasks=100012032
+                Total megabyte-seconds taken by all reduce tasks=136135680
+                Total time spent by all map tasks (ms)=130224
+                Total time spent by all maps in occupied slots (ms)=390672
+                Total time spent by all reduce tasks (ms)=132945
+                Total time spent by all reduces in occupied slots (ms)=531780
+                Total vcore-seconds taken by all map tasks=130224
+                Total vcore-seconds taken by all reduce tasks=132945
+        Map-Reduce Framework
+                CPU time spent (ms)=56640
+                Combine input records=0
+                Combine output records=0
+                Failed Shuffles=0
+                GC time elapsed (ms)=2715
+                Input split bytes=942
+                Map input records=500191
+                Map output bytes=20975669
+                Map output materialized bytes=10559257
+                Map output records=500191
+                Merged Map outputs=18
+                Physical memory (bytes) snapshot=2573545472
+                Reduce input groups=73152
+                Reduce input records=500191
+                Reduce output records=524445
+                Reduce shuffle bytes=10559257
+                Shuffled Maps =18
+                Spilled Records=1000382
+                Total committed heap usage (bytes)=1794465792
+                Virtual memory (bytes) snapshot=11787862016
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+Waiting for step 8 of 19 (s-1CGMB1RAYTZ88) to complete...
+  COMPLETED
+Attempting to fetch counters from logs...
+Looking for step log in s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-1CGMB1RAYT                                                                                                                Z88...
+  Parsing step log: s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-1CGMB1RAYTZ88/                                                                                                                syslog.gz
+Counters: 51
+        File Input Format Counters
+                Bytes Read=21993298
+        File Output Format Counters
+                Bytes Written=22053116
+        File System Counters
+                FILE: Number of bytes read=11929445
+                FILE: Number of bytes written=23964423
+                FILE: Number of large read operations=0
+                FILE: Number of read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=21994240
+                HDFS: Number of bytes written=22053116
+                HDFS: Number of large read operations=0
+                HDFS: Number of read operations=27
+                HDFS: Number of write operations=6
+        Job Counters
+                Data-local map tasks=5
+                Killed reduce tasks=1
+                Launched map tasks=6
+                Launched reduce tasks=4
+                Rack-local map tasks=1
+                Total megabyte-seconds taken by all map tasks=76307712
+                Total megabyte-seconds taken by all reduce tasks=142688256
+                Total time spent by all map tasks (ms)=99359
+                Total time spent by all maps in occupied slots (ms)=298077
+                Total time spent by all reduce tasks (ms)=139344
+                Total time spent by all reduces in occupied slots (ms)=557376
+                Total vcore-seconds taken by all map tasks=99359
+                Total vcore-seconds taken by all reduce tasks=139344
+        Map-Reduce Framework
+                CPU time spent (ms)=55270
+                Combine input records=0
+                Combine output records=0
+                Failed Shuffles=0
+                GC time elapsed (ms)=2098
+                Input split bytes=942
+                Map input records=524445
+                Map output bytes=21920693
+                Map output materialized bytes=11103382
+                Map output records=524445
+                Merged Map outputs=18
+                Physical memory (bytes) snapshot=2588352512
+                Reduce input groups=74252
+                Reduce input records=524445
+                Reduce output records=527521
+                Reduce shuffle bytes=11103382
+                Shuffled Maps =18
+                Spilled Records=1048890
+                Total committed heap usage (bytes)=1794465792
+                Virtual memory (bytes) snapshot=11787288576
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+Waiting for step 9 of 19 (s-3UEZJWHI8G8IE) to complete...
+  COMPLETED
+Attempting to fetch counters from logs...
+Looking for step log in s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-3UEZJWHI8G                                                                                                                8IE...
+  Parsing step log: s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-3UEZJWHI8G8IE/                                                                                                                syslog.gz
+Counters: 51
+        File Input Format Counters
+                Bytes Read=22224959
+        File Output Format Counters
+                Bytes Written=22066873
+        File System Counters
+                FILE: Number of bytes read=11981553
+                FILE: Number of bytes written=24083583
+                FILE: Number of large read operations=0
+                FILE: Number of read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=22225901
+                HDFS: Number of bytes written=22066873
+                HDFS: Number of large read operations=0
+                HDFS: Number of read operations=27
+                HDFS: Number of write operations=6
+        Job Counters
+                Data-local map tasks=5
+                Killed reduce tasks=1
+                Launched map tasks=6
+                Launched reduce tasks=4
+                Rack-local map tasks=1
+                Total megabyte-seconds taken by all map tasks=83552256
+                Total megabyte-seconds taken by all reduce tasks=141463552
+                Total time spent by all map tasks (ms)=108792
+                Total time spent by all maps in occupied slots (ms)=326376
+                Total time spent by all reduce tasks (ms)=138148
+                Total time spent by all reduces in occupied slots (ms)=552592
+                Total vcore-seconds taken by all map tasks=108792
+                Total vcore-seconds taken by all reduce tasks=138148
+        Map-Reduce Framework
+                CPU time spent (ms)=56550
+                Combine input records=0
+                Combine output records=0
+                Failed Shuffles=0
+                GC time elapsed (ms)=2468
+                Input split bytes=942
+                Map input records=527521
+                Map output bytes=22060911
+                Map output materialized bytes=11170434
+                Map output records=527521
+                Merged Map outputs=18
+                Physical memory (bytes) snapshot=2554421248
+                Reduce input groups=74378
+                Reduce input records=527521
+                Reduce output records=527930
+                Reduce shuffle bytes=11170434
+                Shuffled Maps =18
+                Spilled Records=1055042
+                Total committed heap usage (bytes)=1794465792
+                Virtual memory (bytes) snapshot=11787943936
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+Waiting for step 10 of 19 (s-2ORT20QRIB3WI) to complete...
+  COMPLETED
+Attempting to fetch counters from logs...
+Looking for step log in s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-2ORT20QRIB                                                                                                                3WI...
+  Parsing step log: s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-2ORT20QRIB3WI/                                                                                                                syslog.gz
+Counters: 51
+        File Input Format Counters
+                Bytes Read=22228399
+        File Output Format Counters
+                Bytes Written=22063080
+        File System Counters
+                FILE: Number of bytes read=11994853
+                FILE: Number of bytes written=24105884
+                FILE: Number of large read operations=0
+                FILE: Number of read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=22229341
+                HDFS: Number of bytes written=22063080
+                HDFS: Number of large read operations=0
+                HDFS: Number of read operations=27
+                HDFS: Number of write operations=6
+        Job Counters
+                Data-local map tasks=5
+                Killed reduce tasks=1
+                Launched map tasks=6
+                Launched reduce tasks=4
+                Rack-local map tasks=1
+                Total megabyte-seconds taken by all map tasks=75456768
+                Total megabyte-seconds taken by all reduce tasks=130845696
+                Total time spent by all map tasks (ms)=98251
+                Total time spent by all maps in occupied slots (ms)=294753
+                Total time spent by all reduce tasks (ms)=127779
+                Total time spent by all reduces in occupied slots (ms)=511116
+                Total vcore-seconds taken by all map tasks=98251
+                Total vcore-seconds taken by all reduce tasks=127779
+        Map-Reduce Framework
+                CPU time spent (ms)=54100
+                Combine input records=0
+                Combine output records=0
+                Failed Shuffles=0
+                GC time elapsed (ms)=2273
+                Input split bytes=942
+                Map input records=527930
+                Map output bytes=22074668
+                Map output materialized bytes=11179435
+                Map output records=527930
+                Merged Map outputs=18
+                Physical memory (bytes) snapshot=2571059200
+                Reduce input groups=74409
+                Reduce input records=527930
+                Reduce output records=527997
+                Reduce shuffle bytes=11179435
+                Shuffled Maps =18
+                Spilled Records=1055860
+                Total committed heap usage (bytes)=1794465792
+                Virtual memory (bytes) snapshot=11791613952
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+Waiting for step 11 of 19 (s-251N68YEV7VXS) to complete...
+  COMPLETED
+Attempting to fetch counters from logs...
+Looking for step log in s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-251N68YEV7                                                                                                                VXS...
+  Parsing step log: s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-251N68YEV7VXS/                                                                                                                syslog.gz
+Counters: 49
+        File Input Format Counters
+                Bytes Read=22227450
+        File Output Format Counters
+                Bytes Written=22057350
+        File System Counters
+                FILE: Number of bytes read=11993113
+                FILE: Number of bytes written=24107961
+                FILE: Number of large read operations=0
+                FILE: Number of read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=22228392
+                HDFS: Number of bytes written=22057350
+                HDFS: Number of large read operations=0
+                HDFS: Number of read operations=27
+                HDFS: Number of write operations=6
+        Job Counters
+                Data-local map tasks=6
+                Launched map tasks=6
+                Launched reduce tasks=3
+                Total megabyte-seconds taken by all map tasks=75937536
+                Total megabyte-seconds taken by all reduce tasks=115458048
+                Total time spent by all map tasks (ms)=98877
+                Total time spent by all maps in occupied slots (ms)=296631
+                Total time spent by all reduce tasks (ms)=112752
+                Total time spent by all reduces in occupied slots (ms)=451008
+                Total vcore-seconds taken by all map tasks=98877
+                Total vcore-seconds taken by all reduce tasks=112752
+        Map-Reduce Framework
+                CPU time spent (ms)=55730
+                Combine input records=0
+                Combine output records=0
+                Failed Shuffles=0
+                GC time elapsed (ms)=2729
+                Input split bytes=942
+                Map input records=527997
+                Map output bytes=22070875
+                Map output materialized bytes=11183243
+                Map output records=527997
+                Merged Map outputs=18
+                Physical memory (bytes) snapshot=2562142208
+                Reduce input groups=74414
+                Reduce input records=527997
+                Reduce output records=528006
+                Reduce shuffle bytes=11183243
+                Shuffled Maps =18
+                Spilled Records=1055994
+                Total committed heap usage (bytes)=1794465792
+                Virtual memory (bytes) snapshot=11791015936
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+Waiting for step 12 of 19 (s-137VLKJAIGUB9) to complete...
+  COMPLETED
+Attempting to fetch counters from logs...
+Looking for step log in s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-137VLKJAIG                                                                                                                UB9...
+  Parsing step log: s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-137VLKJAIGUB9/                                                                                                                syslog.gz
+Counters: 50
+        File Input Format Counters
+                Bytes Read=22226019
+        File Output Format Counters
+                Bytes Written=22064820
+        File System Counters
+                FILE: Number of bytes read=11993270
+                FILE: Number of bytes written=24108149
+                FILE: Number of large read operations=0
+                FILE: Number of read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=22226961
+                HDFS: Number of bytes written=22064820
+                HDFS: Number of large read operations=0
+                HDFS: Number of read operations=27
+                HDFS: Number of write operations=6
+        Job Counters
+                Data-local map tasks=6
+                Killed reduce tasks=1
+                Launched map tasks=6
+                Launched reduce tasks=4
+                Total megabyte-seconds taken by all map tasks=97424640
+                Total megabyte-seconds taken by all reduce tasks=139337728
+                Total time spent by all map tasks (ms)=126855
+                Total time spent by all maps in occupied slots (ms)=380565
+                Total time spent by all reduce tasks (ms)=136072
+                Total time spent by all reduces in occupied slots (ms)=544288
+                Total vcore-seconds taken by all map tasks=126855
+                Total vcore-seconds taken by all reduce tasks=136072
+        Map-Reduce Framework
+                CPU time spent (ms)=57300
+                Combine input records=0
+                Combine output records=0
+                Failed Shuffles=0
+                GC time elapsed (ms)=2731
+                Input split bytes=942
+                Map input records=528006
+                Map output bytes=22065145
+                Map output materialized bytes=11183274
+                Map output records=528006
+                Merged Map outputs=18
+                Physical memory (bytes) snapshot=2551652352
+                Reduce input groups=74415
+                Reduce input records=528006
+                Reduce output records=528006
+                Reduce shuffle bytes=11183274
+                Shuffled Maps =18
+                Spilled Records=1056012
+                Total committed heap usage (bytes)=1794465792
+                Virtual memory (bytes) snapshot=11787939840
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+Waiting for step 13 of 19 (s-3AT8AJ7LA3X1P) to complete...
+  COMPLETED
+Attempting to fetch counters from logs...
+Looking for step log in s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-3AT8AJ7LA3                                                                                                                X1P...
+  Parsing step log: s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-3AT8AJ7LA3X1P/                                                                                                                syslog.gz
+Counters: 49
+        File Input Format Counters
+                Bytes Read=22227885
+        File Output Format Counters
+                Bytes Written=22054570
+        File System Counters
+                FILE: Number of bytes read=11995531
+                FILE: Number of bytes written=24111377
+                FILE: Number of large read operations=0
+                FILE: Number of read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=22228827
+                HDFS: Number of bytes written=22054570
+                HDFS: Number of large read operations=0
+                HDFS: Number of read operations=27
+                HDFS: Number of write operations=6
+        Job Counters
+                Data-local map tasks=6
+                Launched map tasks=6
+                Launched reduce tasks=3
+                Total megabyte-seconds taken by all map tasks=76114176
+                Total megabyte-seconds taken by all reduce tasks=118708224
+                Total time spent by all map tasks (ms)=99107
+                Total time spent by all maps in occupied slots (ms)=297321
+                Total time spent by all reduce tasks (ms)=115926
+                Total time spent by all reduces in occupied slots (ms)=463704
+                Total vcore-seconds taken by all map tasks=99107
+                Total vcore-seconds taken by all reduce tasks=115926
+        Map-Reduce Framework
+                CPU time spent (ms)=54460
+                Combine input records=0
+                Combine output records=0
+                Failed Shuffles=0
+                GC time elapsed (ms)=2580
+                Input split bytes=942
+                Map input records=528006
+                Map output bytes=22072615
+                Map output materialized bytes=11184250
+                Map output records=528006
+                Merged Map outputs=18
+                Physical memory (bytes) snapshot=2580709376
+                Reduce input groups=74415
+                Reduce input records=528006
+                Reduce output records=528006
+                Reduce shuffle bytes=11184250
+                Shuffled Maps =18
+                Spilled Records=1056012
+                Total committed heap usage (bytes)=1794465792
+                Virtual memory (bytes) snapshot=11787837440
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+Waiting for step 14 of 19 (s-1NC452MIH4NNK) to complete...
+  COMPLETED
+Attempting to fetch counters from logs...
+Looking for step log in s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-1NC452MIH4                                                                                                                NNK...
+  Parsing step log: s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-1NC452MIH4NNK/                                                                                                                syslog.gz
+Counters: 50
+        File Input Format Counters
+                Bytes Read=22225324
+        File Output Format Counters
+                Bytes Written=22054036
+        File System Counters
+                FILE: Number of bytes read=11991999
+                FILE: Number of bytes written=24105769
+                FILE: Number of large read operations=0
+                FILE: Number of read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=22226266
+                HDFS: Number of bytes written=22054036
+                HDFS: Number of large read operations=0
+                HDFS: Number of read operations=27
+                HDFS: Number of write operations=6
+        Job Counters
+                Data-local map tasks=6
+                Killed reduce tasks=1
+                Launched map tasks=6
+                Launched reduce tasks=4
+                Total megabyte-seconds taken by all map tasks=102705408
+                Total megabyte-seconds taken by all reduce tasks=146104320
+                Total time spent by all map tasks (ms)=133731
+                Total time spent by all maps in occupied slots (ms)=401193
+                Total time spent by all reduce tasks (ms)=142680
+                Total time spent by all reduces in occupied slots (ms)=570720
+                Total vcore-seconds taken by all map tasks=133731
+                Total vcore-seconds taken by all reduce tasks=142680
+        Map-Reduce Framework
+                CPU time spent (ms)=54250
+                Combine input records=0
+                Combine output records=0
+                Failed Shuffles=0
+                GC time elapsed (ms)=2784
+                Input split bytes=942
+                Map input records=528006
+                Map output bytes=22062365
+                Map output materialized bytes=11182165
+                Map output records=528006
+                Merged Map outputs=18
+                Physical memory (bytes) snapshot=2592968704
+                Reduce input groups=74415
+                Reduce input records=528006
+                Reduce output records=528006
+                Reduce shuffle bytes=11182165
+                Shuffled Maps =18
+                Spilled Records=1056012
+                Total committed heap usage (bytes)=1794465792
+                Virtual memory (bytes) snapshot=11788926976
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+Waiting for step 15 of 19 (s-2OESK4ZGF83XQ) to complete...
+  COMPLETED
+Attempting to fetch counters from logs...
+Looking for step log in s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-2OESK4ZGF8                                                                                                                3XQ...
+  Parsing step log: s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-2OESK4ZGF83XQ/                                                                                                                syslog.gz
+Counters: 49
+        File Input Format Counters
+                Bytes Read=22225189
+        File Output Format Counters
+                Bytes Written=22052815
+        File System Counters
+                FILE: Number of bytes read=11992715
+                FILE: Number of bytes written=24106482
+                FILE: Number of large read operations=0
+                FILE: Number of read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=22226131
+                HDFS: Number of bytes written=22052815
+                HDFS: Number of large read operations=0
+                HDFS: Number of read operations=27
+                HDFS: Number of write operations=6
+        Job Counters
+                Data-local map tasks=6
+                Launched map tasks=6
+                Launched reduce tasks=3
+                Total megabyte-seconds taken by all map tasks=76009728
+                Total megabyte-seconds taken by all reduce tasks=115891200
+                Total time spent by all map tasks (ms)=98971
+                Total time spent by all maps in occupied slots (ms)=296913
+                Total time spent by all reduce tasks (ms)=113175
+                Total time spent by all reduces in occupied slots (ms)=452700
+                Total vcore-seconds taken by all map tasks=98971
+                Total vcore-seconds taken by all reduce tasks=113175
+        Map-Reduce Framework
+                CPU time spent (ms)=56190
+                Combine input records=0
+                Combine output records=0
+                Failed Shuffles=0
+                GC time elapsed (ms)=2693
+                Input split bytes=942
+                Map input records=528006
+                Map output bytes=22061831
+                Map output materialized bytes=11182171
+                Map output records=528006
+                Merged Map outputs=18
+                Physical memory (bytes) snapshot=2565640192
+                Reduce input groups=74415
+                Reduce input records=528006
+                Reduce output records=528006
+                Reduce shuffle bytes=11182171
+                Shuffled Maps =18
+                Spilled Records=1056012
+                Total committed heap usage (bytes)=1794465792
+                Virtual memory (bytes) snapshot=11788439552
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+Waiting for step 16 of 19 (s-5EIPOS9LR0E1) to complete...
+  COMPLETED
+Attempting to fetch counters from logs...
+Looking for step log in s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-5EIPOS9LR0                                                                                                                E1...
+  Parsing step log: s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-5EIPOS9LR0E1/s                                                                                                                yslog.gz
+Counters: 49
+        File Input Format Counters
+                Bytes Read=22224886
+        File Output Format Counters
+                Bytes Written=22058832
+        File System Counters
+                FILE: Number of bytes read=11997328
+                FILE: Number of bytes written=24117578
+                FILE: Number of large read operations=0
+                FILE: Number of read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=22225828
+                HDFS: Number of bytes written=22058832
+                HDFS: Number of large read operations=0
+                HDFS: Number of read operations=27
+                HDFS: Number of write operations=6
+        Job Counters
+                Data-local map tasks=6
+                Launched map tasks=6
+                Launched reduce tasks=3
+                Total megabyte-seconds taken by all map tasks=73665024
+                Total megabyte-seconds taken by all reduce tasks=117564416
+                Total time spent by all map tasks (ms)=95918
+                Total time spent by all maps in occupied slots (ms)=287754
+                Total time spent by all reduce tasks (ms)=114809
+                Total time spent by all reduces in occupied slots (ms)=459236
+                Total vcore-seconds taken by all map tasks=95918
+                Total vcore-seconds taken by all reduce tasks=114809
+        Map-Reduce Framework
+                CPU time spent (ms)=52890
+                Combine input records=0
+                Combine output records=0
+                Failed Shuffles=0
+                GC time elapsed (ms)=2916
+                Input split bytes=942
+                Map input records=528006
+                Map output bytes=22060610
+                Map output materialized bytes=11188645
+                Map output records=528006
+                Merged Map outputs=18
+                Physical memory (bytes) snapshot=2573398016
+                Reduce input groups=74415
+                Reduce input records=528006
+                Reduce output records=528006
+                Reduce shuffle bytes=11188645
+                Shuffled Maps =18
+                Spilled Records=1056012
+                Total committed heap usage (bytes)=1794465792
+                Virtual memory (bytes) snapshot=11787853824
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+Waiting for step 17 of 19 (s-1LXHYKORQF66P) to complete...
+  COMPLETED
+Attempting to fetch counters from logs...
+Looking for step log in s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-1LXHYKORQF                                                                                                                66P...
+  Parsing step log: s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-1LXHYKORQF66P/                                                                                                                syslog.gz
+Counters: 50
+        File Input Format Counters
+                Bytes Read=22226388
+        File Output Format Counters
+                Bytes Written=22050989
+        File System Counters
+                FILE: Number of bytes read=11999743
+                FILE: Number of bytes written=24118575
+                FILE: Number of large read operations=0
+                FILE: Number of read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=22227330
+                HDFS: Number of bytes written=22050989
+                HDFS: Number of large read operations=0
+                HDFS: Number of read operations=27
+                HDFS: Number of write operations=6
+        Job Counters
+                Data-local map tasks=6
+                Killed reduce tasks=1
+                Launched map tasks=6
+                Launched reduce tasks=4
+                Total megabyte-seconds taken by all map tasks=103263744
+                Total megabyte-seconds taken by all reduce tasks=159145984
+                Total time spent by all map tasks (ms)=134458
+                Total time spent by all maps in occupied slots (ms)=403374
+                Total time spent by all reduce tasks (ms)=155416
+                Total time spent by all reduces in occupied slots (ms)=621664
+                Total vcore-seconds taken by all map tasks=134458
+                Total vcore-seconds taken by all reduce tasks=155416
+        Map-Reduce Framework
+                CPU time spent (ms)=55380
+                Combine input records=0
+                Combine output records=0
+                Failed Shuffles=0
+                GC time elapsed (ms)=2734
+                Input split bytes=942
+                Map input records=528006
+                Map output bytes=22066627
+                Map output materialized bytes=11187227
+                Map output records=528006
+                Merged Map outputs=18
+                Physical memory (bytes) snapshot=2579668992
+                Reduce input groups=74415
+                Reduce input records=528006
+                Reduce output records=528006
+                Reduce shuffle bytes=11187227
+                Shuffled Maps =18
+                Spilled Records=1056012
+                Total committed heap usage (bytes)=1794465792
+                Virtual memory (bytes) snapshot=11791429632
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+Waiting for step 18 of 19 (s-2YCOMNO6M4W15) to complete...
+  COMPLETED
+Attempting to fetch counters from logs...
+Looking for step log in s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-2YCOMNO6M4                                                                                                                W15...
+  Parsing step log: s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-2YCOMNO6M4W15/                                                                                                                syslog.gz
+Counters: 49
+        File Input Format Counters
+                Bytes Read=22224428
+        File Output Format Counters
+                Bytes Written=2152383
+        File System Counters
+                FILE: Number of bytes read=11994996
+                FILE: Number of bytes written=24115501
+                FILE: Number of large read operations=0
+                FILE: Number of read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=22225370
+                HDFS: Number of bytes written=2152383
+                HDFS: Number of large read operations=0
+                HDFS: Number of read operations=27
+                HDFS: Number of write operations=6
+        Job Counters
+                Data-local map tasks=6
+                Launched map tasks=6
+                Launched reduce tasks=3
+                Total megabyte-seconds taken by all map tasks=77377536
+                Total megabyte-seconds taken by all reduce tasks=86291456
+                Total time spent by all map tasks (ms)=100752
+                Total time spent by all maps in occupied slots (ms)=302256
+                Total time spent by all reduce tasks (ms)=84269
+                Total time spent by all reduces in occupied slots (ms)=337076
+                Total vcore-seconds taken by all map tasks=100752
+                Total vcore-seconds taken by all reduce tasks=84269
+        Map-Reduce Framework
+                CPU time spent (ms)=40370
+                Combine input records=0
+                Combine output records=0
+                Failed Shuffles=0
+                GC time elapsed (ms)=2436
+                Input split bytes=942
+                Map input records=528006
+                Map output bytes=22058784
+                Map output materialized bytes=11188900
+                Map output records=528006
+                Merged Map outputs=18
+                Physical memory (bytes) snapshot=2606395392
+                Reduce input groups=74415
+                Reduce input records=528006
+                Reduce output records=74415
+                Reduce shuffle bytes=11188900
+                Shuffled Maps =18
+                Spilled Records=1056012
+                Total committed heap usage (bytes)=1794465792
+                Virtual memory (bytes) snapshot=11790823424
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+Waiting for step 19 of 19 (s-3MYIKHPL1M7PL) to complete...
+  COMPLETED
+Attempting to fetch counters from logs...
+Looking for step log in s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-3MYIKHPL1M7PL...
+  Parsing step log: s3://mapreduce22/logs/j-3JANELSUDKQXB/steps/s-3MYIKHPL1M7PL/syslog.gz
+Counters: 55
+        File Input Format Counters
+                Bytes Read=2307570
+        File Output Format Counters
+                Bytes Written=260
+        File System Counters
+                FILE: Number of bytes read=1151753
+                FILE: Number of bytes written=3234796
+                FILE: Number of large read operations=0
+                FILE: Number of read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=2308512
+                HDFS: Number of bytes written=0
+                HDFS: Number of large read operations=0
+                HDFS: Number of read operations=12
+                HDFS: Number of write operations=0
+                S3: Number of bytes read=0
+                S3: Number of bytes written=260
+                S3: Number of large read operations=0
+                S3: Number of read operations=0
+                S3: Number of write operations=0
+        Job Counters
+                Data-local map tasks=6
+                Killed reduce tasks=1
+                Launched map tasks=6
+                Launched reduce tasks=4
+                Total megabyte-seconds taken by all map tasks=129228288
+                Total megabyte-seconds taken by all reduce tasks=82743296
+                Total time spent by all map tasks (ms)=168266
+                Total time spent by all maps in occupied slots (ms)=504798
+                Total time spent by all reduce tasks (ms)=80804
+                Total time spent by all reduces in occupied slots (ms)=323216
+                Total vcore-seconds taken by all map tasks=168266
+                Total vcore-seconds taken by all reduce tasks=80804
+        Map-Reduce Framework
+                CPU time spent (ms)=16200
+                Combine input records=0
+                Combine output records=0
+                Failed Shuffles=0
+                GC time elapsed (ms)=5663
+                Input split bytes=942
+                Map input records=74415
+                Map output bytes=2152383
+                Map output materialized bytes=1151663
+                Map output records=74415
+                Merged Map outputs=18
+                Physical memory (bytes) snapshot=2691219456
+                Reduce input groups=1
+                Reduce input records=74415
+                Reduce output records=10
+                Reduce shuffle bytes=1151663
+                Shuffled Maps =18
+                Spilled Records=148830
+                Total committed heap usage (bytes)=1794465792
+                Virtual memory (bytes) snapshot=11815399424
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+Streaming final output from s3://mapreduce22/tmp/page_rank.Kamakshi.20161218.220449.916000/output/...
+0.0018580304371090194   18
+0.0011964409875482162   737
+0.0008968011065799934   1719
+0.0008409033844204463   143
+0.000840655004603865    118
+0.0008376113382148554   790
+0.0008141538527633274   136
+0.0007233656854849778   40
+0.0006120679133850399   1619
+0.0005947965240505457   1179
+Removing s3 temp directory s3://mapreduce22/tmp/page_rank.Kamakshi.20161218.220449.916000/...
+Removing temp directory c:\users\kamakshi\appdata\local\temp\page_rank.Kamakshi.20161218.220449.916000...
+Removing log files in s3://mapreduce22/logs/j-3JANELSUDKQXB/...
+Terminating cluster: j-3JANELSUDKQXB
+
+Kamakshi@ThinkpadX220 MINGW64 /d/UCL/Cloud Computing/Cloud Computing/pagerank
